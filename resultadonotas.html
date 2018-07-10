@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-br">
+<!-- @author Helder Grunewald - @version 0.1 -->
+<!-- Esta página foi desenvolvida com HTML5, e JAVASCRIPT -->
+
+
+	<!-- ==============HEAD==============  -->
+	<head>
+		<meta charset="utf-8">
+		<title>Calcular Média</title>
+	</head> <!-- ====FIM DA HEAD====  -->
+
+	<!-- ==============BODY==============  -->
+	<body>
+		<!-- javascript -->
+		<script type="text/javascript">
+			var nota01 = prompt('Qual a sua nota de 0 a 100 do primeiro bimestre?');
+			var nota02 = prompt('Qual a sua nota de 0 a 100 do segundo bimestre?');
+			nota01 = parseInt(nota01);
+			nota02 = parseInt(nota02);
+			var media = 70;
+
+			var resultado = (nota01 + nota02) / 2;
+
+			if(resultado >= media){
+				document.write('Parabéns, você foi aprovado, sua nota é de ' + resultado + ', que passa a média de ' + media + '.');
+			} else {
+				document.write('Poxa, você foi reprovado, sua nota é de ' + resultado + ', que fica a baixo de ' + media + '.');
+			}
+
+			document.wirte(resultado);
+		</script> <!-- Fim do javascript -->
+	</body> <!-- ====FIM DA BODY====  -->
+</html>
